@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 95lvh;
-  background: url(/images/bg-img.jpg) center / cover fixed no-repeat;
+  background: url(./images/bg-img.jpg) center / cover fixed no-repeat;
   position: relative;
   scroll-behavior: smooth;
   user-select: none;
@@ -299,6 +299,9 @@ tbody td:first-child {
   text-wrap: wrap;
   width: min-content;
 }
+#condition {
+  font-size: 14px;
+}
 #desc {
   margin-top: 20px;
   font: 14px "Open Sans";
@@ -332,14 +335,25 @@ tbody td:first-child {
   text-align: center;
   margin: 50px;
 }
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
 .about pre {
   font-size: 1.01rem;
   line-height: 1.6;
-  margin: 1rem 0;
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   background-color: #f5f5f5;
+  font-size: 1rem;
+  width: 100vw;
+  text-wrap: wrap;
+  margin: 1rem 0;
 }
 @media screen and (max-width: 768px) {
   html {
@@ -381,9 +395,7 @@ tbody td:first-child {
   .home {
     flex-direction: column;
   }
-  .features {
-    flex-direction: column;
-  }
+
   .feature {
     margin: 20px 0;
   }
@@ -394,8 +406,17 @@ tbody td:first-child {
   .feature h2 {
     font-size: 1.5rem;
   }
-  .about pre {
+  .feature p {
     font-size: 1rem;
+    padding: 0 30px;
+    text-align: center;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
   }
   .bottom {
     width: 100%;
@@ -412,7 +433,7 @@ tbody td:first-child {
   .detail,
   .detail ul {
     position: static;
-    margin-top: 35px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -421,7 +442,7 @@ tbody td:first-child {
   .detail::before {
     content: "More detail on weather today:";
     font-size: 20px;
-    color: #8c9393;
+    color: #4e5151;
     padding-left: 28px;
     position: relative;
     top: 40px;
@@ -434,6 +455,9 @@ tbody td:first-child {
   }
   .bottom {
     margin-top: 10% !important;
+  }
+  #condition {
+    font-size: 14px;
   }
   #desc {
     font-size: 12px;
