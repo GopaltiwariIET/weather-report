@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <!-- Fonts -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./index.css" />
     <style>
       .form {
         display: flex;
@@ -48,7 +48,7 @@
         <div class="logo">
           <img
             class="logo-img"
-            src="/images/logo.svg"
+            src="./images/logo.svg"
             alt="Weather-Report"
             title="Get your live weather update here" />
           <span class="logo-text">Weather-Report</span>
@@ -57,27 +57,31 @@
           <ul>
             <li class="navlist" id="nav-1"><a href="/">Home</a></li>
             <li class="navlist" id="nav-4">
-              <a href="/features.html">Features</a>
+              <a href="./features.html">Features</a>
             </li>
             <li class="navlist" id="nav-3" title="How to use">
-              <a href="/about.html">About Us </a>
+              <a href="./about.html">About Us </a>
             </li>
             <li class="navlist" id="nav-0">
-              <a href="/not_available.html">Use as Extension</a>
+              <a href="./not_available.html">Use as Extension</a>
             </li>
 
             <li class="navlist" id="nav-0">
-              <a href="/contact.html">Contact Us</a>
+              <a href="./contact.html">Contact Us</a>
             </li>
 
             <li class="navlist" id="nav-2">
-              <a href="/not_available.html">Use as Extension</a>
+              <a href="./not_available.html">Use as Extension</a>
             </li>
           </ul>
         </nav>
       </header>
       <main>
-        <form action="/contact/submit" class="form" method="post">
+        <form
+          action="https://notesapi-eeut7aybra-uc.a.run.app/submit/feedback"
+          class="form"
+          method="get"
+          onsubmit="window.location.href='./submitted.html'; return false;">
           <h1>Contact Us!</h1>
           <p>
             In case you want to share your feedback , suggestions or any issue.

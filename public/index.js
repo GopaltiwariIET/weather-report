@@ -17,9 +17,10 @@ $("#searchCity").keypress(function (event) {
     }
   }
 });
-const key = "CPFSV8JM96NUGHLF4WPXHZH43";
-// const key = "FP6U7553EBYTTFR8MDSEG4LCB";
-async function fetchData(city = "Lucknow", key) {
+// const key = "CPFSV8JM96NUGHLF4WPXHZH43";
+// const key = "883VRQQVX6F2DB3K29TR7K9XR";
+async function fetchData(city = "Lucknow") {
+  const key = "FP6U7553EBYTTFR8MDSEG4LCB";
   const response = await fetch(
     `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${city}/today?unitGroup=metric&key=${key}&contentType=json`
   );
